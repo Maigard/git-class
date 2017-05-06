@@ -68,10 +68,10 @@ Note: Kevin
 
 ## Git Branch
 
-Note: Kevin
+Note: Ken
 
 ---
 
 ## Git Merge
 
-Note: Kevin
+Note: Ken
