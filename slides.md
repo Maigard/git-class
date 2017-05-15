@@ -10,6 +10,17 @@ with:
 
 * Distributed Version Control System
 * Written by Linus Torvalds (The linux guy)
+* Widely used industry tool
+
+Note: Ken
+
+---
+
+## What is git good for?
+
+* Having a "Safe space" to work (branches)
+* Collaborating with others
+* Tracking file changes
 
 Note: Ken
 
@@ -30,37 +41,88 @@ Note: Ken
 
 ---
 
+## Install git
+https://git-scm.com/
+
+Note: Kevin
+
+---
+
+## Choose a folder, any folder
+* open terminal or command prompt
+
+* OSX and Linux:
+* mkdir ~/Desktop/git_basics
+* cd ~/Desktop/git_basics
+
+* Windows:
+Note: //TODO
+
+Note: Kevin
+
+---
+
 ## Git Init
 * <section><pre><code data-trim data-noescape>git init</code></pre></section>
-* Creates a new <strong>Repository</strong>
+* Creates a new **Repository**
+
 Note: Kevin
 
 ---
 
 ## Git Status
 * <section><pre><code data-trim data-noescape>git status</code></pre></section>
-* Check the status of <strong>Staged</strong> and <strong>Unstaged</strong> changes
+* Check the status of **Staged** and **Unstaged** changes
+
+Note: Kevin - Add screenshot to show staged vs unstaged
+
+---
+
+## Let's add a file to our **repository**
+* Create a text file in your directory
+
+* nano file.txt
+* control + o
+* control + x
+* enter
+* ls (to check if file is there)
+
+* open a text editor
+* save file in your repository folder
+
+Note: //TODO Clean up
+
+---
+
+## Git Status
+* <section><pre><code data-trim data-noescape>git status</code></pre></section>
+* Check the status of **Staged** and **Unstaged** changes
+
+* This time, lets see what is different?
+
 Note: Kevin - Add screenshot to show staged vs unstaged
 
 ---
 
 ## Git Add
 * <section><pre><code data-trim data-noescape>git add</code></pre></section>
-* Adds, or <strong>Stages</strong>, changes for commit
+* Adds, or **Stages**, changes for commit
+
+* Now we are going to add our file to our staged/tracked changes
 Note: Kevin
 
 ---
 
 ## Git Commit
 * <section><pre><code data-trim data-noescape>git commit</code></pre></section>
-* Takes your <strong>Staged</strong> changes and saves them in the log
+* Takes your **Staged** changes and saves them in the log
 Note: Kevin
 
 ---
 
 ## Git log
 * <section><pre><code data-trim data-noescape>git log</code></pre></section>
-* Lets you see your <strong>Commit</strong> history. (History of saves)
+* Lets you see your **Commit** history. (History of saves)
 * This is where gitk and Source Tree help with visualizing commits
 Note: Kevin - extra slides for installing gitk or source tree?
 
@@ -70,14 +132,14 @@ Note: Kevin - extra slides for installing gitk or source tree?
 * <section><pre><code data-trim data-noescape>git checkout [file-name]</code></pre></section>
 * The undo button
 * Lets you "go back" to the previously committed state of a file(s).
-* Forgets modifications shown in <strong>Staged</strong> and <strong>Unstaged</strong> files.
+* Forgets modifications shown in **Staged** and **Unstaged** files.
 Note: Kevin
 
 ---
 
 ## Git Branch
 * <section><pre><code data-trim data-noescape>git branch [your-branch-name]</code></pre></section>
-* Want to work on a new feature without breaking the project? Make a <strong>branch</strong>!
+* Want to work on a new feature without breaking the project? Make a **branch**!
 * Branches are like a sandbox
 * You can play in them and not worry about breaking anything
 * Very useful for working with others. Everyone has their own, or multiple, branch(es)!
@@ -87,7 +149,7 @@ Note: Ken
 
 ## Git Checkout
 * <section><pre><code data-trim data-noescape>git checkout [branch-name]</code></pre></section>
-* This command also allows you to <strong>Checkout</strong> other branches.
+* This command also allows you to **Checkout** other branches.
 * Remember that this command, when given a file name, forgets the changes made to that file after the latest commit.
 Note: Kevin
 
@@ -96,7 +158,10 @@ Note: Kevin
 ## Git Merge
 * <section><pre><code data-trim data-noescape>git merge [branch-name]</code></pre></section>
 * Sandbox branch works? Time to recombine with the rest of the project
-* Merging brings what you are working on back into the  <strong>master</strong> branch
+* Merging brings what you are working on back into the  **master** branch
 Note: Ken
 
 ---
+
+//todo add next steps section
+//Todo add slide on help flag
