@@ -4,15 +4,11 @@
         <meta charset="utf-8">
         <title>reveal-md</title>
         <link rel="stylesheet" href="./css/reveal.css">
-        <link rel="stylesheet" href="./css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="./css/theme/solarized.css" id="theme">
         <link rel="stylesheet" href="./css/highlight/zenburn.css">
         <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
           <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
 
-		<script>
-		  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
-		  ':35729/livereload.js?snipver=1"></' + 'script>')
-		</script>
     </head>
     <body>
 
@@ -20,13 +16,22 @@
             <div class="slides"><section  data-markdown><script type="text/template"># Git
 
 with:
-* Kevin ()
+* Kevin (harokevin0@gmail.com)
 * Ken (kenschmidt@gmail.com)
 </script></section><section  data-markdown><script type="text/template">
 ## What is Git?
 
 * Distributed Version Control System
 * Written by Linus Torvalds (The linux guy)
+* Widely used industry tool
+
+<aside class="notes"><p>Ken</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## What is Git good for?
+
+* Having a "Safe space" to work (branches)
+* Collaborating with others
+* Tracking file changes
 
 <aside class="notes"><p>Ken</p>
 </aside></script></section><section  data-markdown><script type="text/template">
@@ -43,38 +48,168 @@ with:
 
 <aside class="notes"><p>Ken</p>
 </aside></script></section><section  data-markdown><script type="text/template">
-## Git Init
+## Install Git
+https://git-scm.com/
 
 <aside class="notes"><p>Kevin</p>
 </aside></script></section><section  data-markdown><script type="text/template">
-## Git Add
+## Got Git?
+open terminal or command prompt
 
-<aside class="notes"><p>Kevin</p>
+~~~~
+git version
+~~~~
+or
+~~~~
+git --version
+~~~~
+
+<aside class="notes"><p>Lets make sure everyone has git installed</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Overview
+* Use git cli
+* Modify file
+* Make commits(saves)
+* Make branch
+* Merge branch into master
+
+<aside class="notes"><p>use git cli to walk through a git workflow ; Commits: building blocks of git history</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Make a folder, any folder
+* Name it "git_basics", maybe?
+<p></p>
+* Open a terminal in the folder
+  * Windows: Shift+Right Click > Open command window
+  * OSX: cd ~/Desktop/git_basics
+
+<aside class="notes"><p>Might have to slow down here</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Git Init
+~~~~
+git init
+~~~~
+* Creates a new **`*repository*`**
+* Transforms your folder into a **`*repository*`**
+
+<aside class="notes"><p>ls -a before and after git init</p>
 </aside></script></section><section  data-markdown><script type="text/template">
 ## Git Status
+~~~~
+git status
+~~~~
+* View the status of your **`*repository*`**
+* Shows you **`*staged*`** and **`*unstaged*`** changes
+* **`*staged:*`** changes you want to save
+* **`*unstaged:*`** changes you don't want to save
 
-<aside class="notes"><p>Kevin</p>
+<aside class="notes"><p>Kevin - Add screenshot to show staged vs unstaged</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Let's add a file
+~~~~~
+git status
+~~~~~
+* Create a text file in your repository
+
+~~~~~
+git status
+~~~~~
+* What is different?
+
+<aside class="notes"><p>What is different after adding? Encourage users to <code>git status</code> before and after add</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Git Add
+~~~~
+git add [file-name]
+~~~~
+* Adds, or **`*stages*`**, changes for commit
+* Says: "Okay, lets prepare to save this"
+
+<aside class="notes"><p>Make an analogy to accepting someone else&#39;s edits to your paper</p>
 </aside></script></section><section  data-markdown><script type="text/template">
 ## Git Commit
+~~~~
+git commit -m "my short note about my changes"
+~~~~
+* Takes your **`*staged*`** changes and saves them in the log
+<p></p>
 
+On first setup:
+~~~~
+git config --global user.email "your@email.co"
+git config --global user.name "Your Name"
+~~~~
 <aside class="notes"><p>Kevin</p>
 </aside></script></section><section  data-markdown><script type="text/template">
 ## Git log
+~~~~
+git log
+~~~~
+* Lets you see your **`*commit*`** history. (History of saves)
+* This is where gitk and Source Tree help with visualizing commits
 
-<aside class="notes"><p>Kevin</p>
+~~~~
+gitk
+~~~~
+
+<aside class="notes"><p>This is where gitk and source tree (GUIs) are very nice</p>
 </aside></script></section><section  data-markdown><script type="text/template">
 ## Git Checkout
+~~~~
+git checkout [file-name]
+~~~~
+* The undo button
+* Lets you "go back" to the previously committed state of a file(s).
+* Forgets modifications shown in **`*staged*`** and **`*unstaged*`** files.
 
-<aside class="notes"><p>Kevin</p>
+<aside class="notes"><p>Now that we have our first commit we have a base to checkout agasint</p>
 </aside></script></section><section  data-markdown><script type="text/template">
 ## Git Branch
+~~~~
+git branch [your-branch-name]
+~~~~
+* Want to work on a new feature without breaking the project? Make a **`*branch*`**!
+* Branches are like a sandbox
 
-<aside class="notes"><p>Kevin</p>
+<aside class="notes"><p>Branches are good for features, A play area where things wont break, trying out new ideas, possible error on spaces</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Git Checkout
+~~~~
+git checkout [branch-name]
+~~~~
+* This command also allows you to **`*checkout*`** other branches.
+* Remember that this command, when given a file name, forgets the changes made to that file after the latest commit.
+
+~~~~
+git checkout [file-name]
+~~~~
+vs
+~~~~
+git checkout [branch-name]
+~~~~
+
+<aside class="notes"><p>git checkout [file-name] vs git checkout [branch-name]</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Git Branch and Checkout
+~~~~
+git checkout -b [branch-name]
+~~~~
+* This combines the **`*branch*`** creation and **`*checkout*`** commands together
+* Useful because the two commands are used frequently and together
+
+<aside class="notes"><p>Ken</p>
 </aside></script></section><section  data-markdown><script type="text/template">
 ## Git Merge
-
-<aside class="notes"><p>Kevin</p>
-</aside></script></section></div>
+~~~~
+git merge [branch-name]
+~~~~
+* Sandbox branch works? Time to recombine with the rest of the project
+* Merging brings the changes you were working on back into your current branch
+<aside class="notes"><p>Ken</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+//todo add next steps section
+//Todo add slide on help flag
+//TOdo reference materials
+</script></section></div>
         </div>
 
         <script src="./lib/js/head.min.js"></script>
