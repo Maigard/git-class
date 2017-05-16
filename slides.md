@@ -48,92 +48,133 @@ Note: Kevin
 
 ---
 
-## Choose a folder, any folder
-* open terminal or command prompt
+## Got Git?
+open terminal or command prompt
 
-* OSX and Linux:
-* mkdir ~/Desktop/git_basics
-* cd ~/Desktop/git_basics
+~~~~
+git version
+~~~~
+or
+~~~~
+git --version
+~~~~
 
-* Windows:
-Note: //TODO
+Note: Lets make sure everyone has git installed
 
-Note: Kevin
+---
+
+## Overview
+* Use git cli
+* Modify file
+* Make commits(saves)
+* Make branch
+* Merge branch into master
+
+Note: use git cli to walk through a git workflow ; Commits: building blocks of git history
+
+---
+
+## Make a folder, any folder
+* Name it "git_basics", maybe?
+<p></p>
+* Open a terminal in the folder
+  * Windows: Shift+Right Click > Open command window
+  * OSX: cd ~/Desktop/git_basics
+
+Note: Might have to slow down here
 
 ---
 
 ## Git Init
-* <section><pre><code data-trim data-noescape>git init</code></pre></section>
-* Creates a new **Repository**
+~~~~
+git init
+~~~~
+* Creates a new **`*repository*`**
+* Transforms your folder into a **`*repository*`**
 
-Note: Kevin
+Note: ls -a before and after git init
 
 ---
 
 ## Git Status
-* <section><pre><code data-trim data-noescape>git status</code></pre></section>
-* Check the status of **Staged** and **Unstaged** changes
+~~~~
+git status
+~~~~
+* View the status of your **`*repository*`**
+* Shows you **`*staged*`** and **`*unstaged*`** changes
+* **`*staged:*`** changes you want to save
+* **`*unstaged:*`** changes you don't want to save
 
 Note: Kevin - Add screenshot to show staged vs unstaged
 
 ---
 
-## Let's add a file to our **repository**
-* Create a text file in your directory
+## Let's add a file
+~~~~~
+git status
+~~~~~
+* Create a text file in your repository
 
-* nano file.txt
-* control + o
-* control + x
-* enter
-* ls (to check if file is there)
+~~~~~
+git status
+~~~~~
+* What is different?
 
-* open a text editor
-* save file in your repository folder
-
-Note: //TODO Clean up
-
----
-
-## Git Status
-* <section><pre><code data-trim data-noescape>git status</code></pre></section>
-* Check the status of **Staged** and **Unstaged** changes
-
-* This time, lets see what is different?
-
-Note: Kevin - Add screenshot to show staged vs unstaged
+Note: What is different after adding? Encourage users to `git status` before and after add
 
 ---
 
 ## Git Add
-* <section><pre><code data-trim data-noescape>git add</code></pre></section>
-* Adds, or **Stages**, changes for commit
+~~~~
+git add [file-name]
+~~~~
+* Adds, or **`*stages*`**, changes for commit
+* Says: "Okay, lets prepare to save this"
 
-* Now we are going to add our file to our staged/tracked changes
-Note: Kevin
+Note: Make an analogy to accepting someone else's edits to your paper
 
 ---
 
 ## Git Commit
-* <section><pre><code data-trim data-noescape>git commit</code></pre></section>
-* Takes your **Staged** changes and saves them in the log
+~~~~
+git commit -m "my short note about my changes"
+~~~~
+* Takes your **`*staged*`** changes and saves them in the log
+<p></p>
+
+On first setup:
+~~~~
+git config --global user.email "your@email.co"
+git config --global user.name "Your Name"
+~~~~
 Note: Kevin
 
 ---
 
 ## Git log
-* <section><pre><code data-trim data-noescape>git log</code></pre></section>
-* Lets you see your **Commit** history. (History of saves)
+~~~~
+git log
+~~~~
+* Lets you see your **`*commit*`** history. (History of saves)
 * This is where gitk and Source Tree help with visualizing commits
-Note: Kevin - extra slides for installing gitk or source tree?
+
+~~~~
+gitk
+~~~~
+
+Note: This is where gitk and source tree (GUIs) are very nice
 
 ---
 
 ## Git Checkout
-* <section><pre><code data-trim data-noescape>git checkout [file-name]</code></pre></section>
+~~~~
+git checkout [file-name]
+~~~~
 * The undo button
 * Lets you "go back" to the previously committed state of a file(s).
-* Forgets modifications shown in **Staged** and **Unstaged** files.
-Note: Kevin
+* Forgets modifications shown in **`*staged*`** and **`*unstaged*`** files.
+
+Note: Now that we have our first commit we have a base to checkout agasint
 
 ---
 
@@ -141,11 +182,10 @@ Note: Kevin
 ~~~~
 git branch [your-branch-name]
 ~~~~
-* Want to work on a new feature without breaking the project? Make a **branch**!
+* Want to work on a new feature without breaking the project? Make a **`*branch*`**!
 * Branches are like a sandbox
-* You can play in them and not worry about breaking anything
-* Very useful for working with others. Everyone has their own, or multiple, branch(es)!
-Note: Ken
+
+Note: Branches are good for features, A play area where things wont break, trying out new ideas, possible error on spaces
 
 ---
 
@@ -153,9 +193,18 @@ Note: Ken
 ~~~~
 git checkout [branch-name]
 ~~~~
-
-* This command also allows you to **Checkout** other branches.
+* This command also allows you to **`*checkout*`** other branches.
 * Remember that this command, when given a file name, forgets the changes made to that file after the latest commit.
+
+~~~~
+git checkout [file-name]
+~~~~
+vs
+~~~~
+git checkout [branch-name]
+~~~~
+
+Note: git checkout [file-name] vs git checkout [branch-name]
 
 ---
 
@@ -163,7 +212,7 @@ git checkout [branch-name]
 ~~~~
 git checkout -b [branch-name]
 ~~~~
-* This combines the **branch** creation and **Checkout** commands together
+* This combines the **`*branch*`** creation and **`*checkout*`** commands together
 * Useful because the two commands are used frequently and together
 
 Note: Ken
@@ -171,7 +220,9 @@ Note: Ken
 ---
 
 ## Git Merge
-* <section><pre><code data-trim data-noescape>git merge [branch-name]</code></pre></section>
+~~~~
+git merge [branch-name]
+~~~~
 * Sandbox branch works? Time to recombine with the rest of the project
 * Merging brings the changes you were working on back into your current branch
 Note: Ken
@@ -180,3 +231,4 @@ Note: Ken
 
 //todo add next steps section
 //Todo add slide on help flag
+//TOdo reference materials
