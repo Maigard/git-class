@@ -16,7 +16,7 @@ Note: Ken
 
 ---
 
-## What is git good for?
+## What is Git good for?
 
 * Having a "Safe space" to work (branches)
 * Collaborating with others
@@ -41,7 +41,7 @@ Note: Ken
 
 ---
 
-## Install git
+## Install Git
 https://git-scm.com/
 
 Note: Kevin
@@ -138,7 +138,9 @@ Note: Kevin
 ---
 
 ## Git Branch
-* <section><pre><code data-trim data-noescape>git branch [your-branch-name]</code></pre></section>
+~~~~
+git branch [your-branch-name]
+~~~~
 * Want to work on a new feature without breaking the project? Make a **branch**!
 * Branches are like a sandbox
 * You can play in them and not worry about breaking anything
@@ -148,17 +150,30 @@ Note: Ken
 ---
 
 ## Git Checkout
-* <section><pre><code data-trim data-noescape>git checkout [branch-name]</code></pre></section>
+~~~~
+git checkout [branch-name]
+~~~~
+
 * This command also allows you to **Checkout** other branches.
 * Remember that this command, when given a file name, forgets the changes made to that file after the latest commit.
-Note: Kevin
+
+---
+
+## Git Branch and Checkout
+~~~~
+git checkout -b [branch-name]
+~~~~
+* This combines the **branch** creation and **Checkout** commands together
+* Useful because the two commands are used frequently and together
+
+Note: Ken
 
 ---
 
 ## Git Merge
 * <section><pre><code data-trim data-noescape>git merge [branch-name]</code></pre></section>
 * Sandbox branch works? Time to recombine with the rest of the project
-* Merging brings what you are working on back into the  **master** branch
+* Merging brings the changes you were working on back into your current branch
 Note: Ken
 
 ---
