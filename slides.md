@@ -63,6 +63,17 @@ Note: Lets make sure everyone has git installed
 
 ---
 
+## Overview
+* Use git cli
+* Modify file
+* Make commits(saves)
+* Make branch
+* Merge branch into master
+
+Note: use git cli to walk through a git workflow ; Commits: building blocks of git history
+
+---
+
 ## Make a folder, any folder
 * Name it "git_basics", maybe?
 <p></p>
@@ -107,7 +118,7 @@ git status
 ~~~~~
 git status
 ~~~~~
-* What is different this time?
+* What is different?
 
 Note: What is different after adding? Encourage users to `git status` before and after add
 
@@ -129,7 +140,13 @@ Note: Make an analogy to accepting someone else's edits to your paper
 git commit -m "my short note about my changes"
 ~~~~
 * Takes your **`*staged*`** changes and saves them in the log
+<p></p>
 
+On first setup:
+~~~~
+git config --global user.email "your@email.co"
+git config --global user.name "Your Name"
+~~~~
 Note: Kevin
 
 ---
@@ -140,6 +157,10 @@ git log
 ~~~~
 * Lets you see your **`*commit*`** history. (History of saves)
 * This is where gitk and Source Tree help with visualizing commits
+
+~~~~
+gitk
+~~~~
 
 Note: This is where gitk and source tree (GUIs) are very nice
 
@@ -153,7 +174,7 @@ git checkout [file-name]
 * Lets you "go back" to the previously committed state of a file(s).
 * Forgets modifications shown in **`*staged*`** and **`*unstaged*`** files.
 
-Note: Kevin
+Note: Now that we have our first commit we have a base to checkout agasint
 
 ---
 
@@ -163,10 +184,8 @@ git branch [your-branch-name]
 ~~~~
 * Want to work on a new feature without breaking the project? Make a **`*branch*`**!
 * Branches are like a sandbox
-* You can play in them and not worry about breaking anything
-* Very useful for working with others. Everyone has their own, or multiple, branch(es)!
 
-Note: Branches are good for features, trying out ideas without having to setting anythign in stone
+Note: Branches are good for features, A play area where things wont break, trying out new ideas, possible error on spaces
 
 ---
 
