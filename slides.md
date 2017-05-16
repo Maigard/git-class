@@ -48,31 +48,43 @@ Note: Kevin
 
 ---
 
-## Choose a folder, any folder
-* open terminal or command prompt
+## Is git installed?
+~~~~
+git --version
+~~~~
 
-* OSX and Linux:
-* mkdir ~/Desktop/git_basics
-* cd ~/Desktop/git_basics
+Note: Kevin
 
-* Windows:
-Note: //TODO
+---
+
+## Make a folder, any folder
+* Name it "git_basics" maybe?
+
+* Open a terminal in the folder
+* Windows: Shift+Right Click > Open terminal here
+* OSX: cd ~/Desktop/git_basics
 
 Note: Kevin
 
 ---
 
 ## Git Init
-* <section><pre><code data-trim data-noescape>git init</code></pre></section>
-* Creates a new **Repository**
+~~~~
+git init
+~~~~
+* Creates a new **`*Repository*`**
 
 Note: Kevin
 
 ---
 
 ## Git Status
-* <section><pre><code data-trim data-noescape>git status</code></pre></section>
+~~~~
+git status
+~~~~
 * Check the status of **Staged** and **Unstaged** changes
+
+
 
 Note: Kevin - Add screenshot to show staged vs unstaged
 
@@ -95,7 +107,9 @@ Note: //TODO Clean up
 ---
 
 ## Git Status
-* <section><pre><code data-trim data-noescape>git status</code></pre></section>
+~~~~
+git status
+~~~~
 * Check the status of **Staged** and **Unstaged** changes
 
 * This time, lets see what is different?
@@ -105,7 +119,9 @@ Note: Kevin - Add screenshot to show staged vs unstaged
 ---
 
 ## Git Add
-* <section><pre><code data-trim data-noescape>git add</code></pre></section>
+~~~~
+git add
+~~~~
 * Adds, or **Stages**, changes for commit
 
 * Now we are going to add our file to our staged/tracked changes
@@ -113,15 +129,28 @@ Note: Kevin
 
 ---
 
+## Git Add
+~~~~
+git add [file-name]
+~~~~
+<img src="./img/git_status_add.png"/>
+Note: Kevin
+
+---
+
 ## Git Commit
-* <section><pre><code data-trim data-noescape>git commit</code></pre></section>
+~~~~
+git commit
+~~~~
 * Takes your **Staged** changes and saves them in the log
 Note: Kevin
 
 ---
 
 ## Git log
-* <section><pre><code data-trim data-noescape>git log</code></pre></section>
+~~~~
+git log
+~~~~
 * Lets you see your **Commit** history. (History of saves)
 * This is where gitk and Source Tree help with visualizing commits
 Note: Kevin - extra slides for installing gitk or source tree?
@@ -129,7 +158,9 @@ Note: Kevin - extra slides for installing gitk or source tree?
 ---
 
 ## Git Checkout
-* <section><pre><code data-trim data-noescape>git checkout [file-name]</code></pre></section>
+~~~~
+git checkout [file-name]
+~~~~
 * The undo button
 * Lets you "go back" to the previously committed state of a file(s).
 * Forgets modifications shown in **Staged** and **Unstaged** files.
@@ -138,7 +169,9 @@ Note: Kevin
 ---
 
 ## Git Branch
-* <section><pre><code data-trim data-noescape>git branch [your-branch-name]</code></pre></section>
+~~~~
+git branch [your-branch-name]
+~~~~
 * Want to work on a new feature without breaking the project? Make a **branch**!
 * Branches are like a sandbox
 * You can play in them and not worry about breaking anything
@@ -148,7 +181,9 @@ Note: Ken
 ---
 
 ## Git Checkout
-* <section><pre><code data-trim data-noescape>git checkout [branch-name]</code></pre></section>
+~~~~
+git checkout [branch-name]
+~~~~
 * This command also allows you to **Checkout** other branches.
 * Remember that this command, when given a file name, forgets the changes made to that file after the latest commit.
 Note: Kevin
@@ -156,7 +191,9 @@ Note: Kevin
 ---
 
 ## Git Merge
-* <section><pre><code data-trim data-noescape>git merge [branch-name]</code></pre></section>
+~~~~
+git merge [branch-name]
+~~~~
 * Sandbox branch works? Time to recombine with the rest of the project
 * Merging brings what you are working on back into the  **master** branch
 Note: Ken
@@ -165,3 +202,4 @@ Note: Ken
 
 //todo add next steps section
 //Todo add slide on help flag
+//TOdo reference materials
