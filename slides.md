@@ -48,23 +48,29 @@ Note: Kevin
 
 ---
 
-## Is git installed?
+## Got Git?
+open terminal or command prompt
+
+~~~~
+git version
+~~~~
+or
 ~~~~
 git --version
 ~~~~
 
-Note: Kevin
+Note: Lets make sure everyone has git installed
 
 ---
 
 ## Make a folder, any folder
-* Name it "git_basics" maybe?
-
+* Name it "git_basics", maybe?
+<p></p>
 * Open a terminal in the folder
-* Windows: Shift+Right Click > Open terminal here
-* OSX: cd ~/Desktop/git_basics
+  * Windows: Shift+Right Click > Open command window
+  * OSX: cd ~/Desktop/git_basics
 
-Note: Kevin
+Note: Might have to slow down here
 
 ---
 
@@ -72,37 +78,10 @@ Note: Kevin
 ~~~~
 git init
 ~~~~
-* Creates a new **`*Repository*`**
+* Creates a new **`*repository*`**
+* Transforms your folder into a **`*repository*`**
 
-Note: Kevin
-
----
-
-## Git Status
-~~~~
-git status
-~~~~
-* Check the status of **Staged** and **Unstaged** changes
-
-
-
-Note: Kevin - Add screenshot to show staged vs unstaged
-
----
-
-## Let's add a file to our **repository**
-* Create a text file in your directory
-
-* nano file.txt
-* control + o
-* control + x
-* enter
-* ls (to check if file is there)
-
-* open a text editor
-* save file in your repository folder
-
-Note: //TODO Clean up
+Note: ls -a before and after git init
 
 ---
 
@@ -110,22 +89,27 @@ Note: //TODO Clean up
 ~~~~
 git status
 ~~~~
-* Check the status of **Staged** and **Unstaged** changes
-
-* This time, lets see what is different?
+* View the status of your **`*repository*`**
+* Shows you **`*staged*`** and **`*unstaged*`** changes
+* **`*staged:*`** changes you want to save
+* **`*unstaged:*`** changes you don't want to save
 
 Note: Kevin - Add screenshot to show staged vs unstaged
 
 ---
 
-## Git Add
-~~~~
-git add
-~~~~
-* Adds, or **Stages**, changes for commit
+## Let's add a file
+~~~~~
+git status
+~~~~~
+* Create a text file in your repository
 
-* Now we are going to add our file to our staged/tracked changes
-Note: Kevin
+~~~~~
+git status
+~~~~~
+* What is different this time?
+
+Note: What is different after adding? Encourage users to `git status` before and after add
 
 ---
 
@@ -133,16 +117,19 @@ Note: Kevin
 ~~~~
 git add [file-name]
 ~~~~
-<img src="./img/git_status_add.png"/>
-Note: Kevin
+* Adds, or **`*stages*`**, changes for commit
+* Says: "Okay, lets prepare to save this"
+
+Note: Make an analogy to accepting someone else's edits to your paper
 
 ---
 
 ## Git Commit
 ~~~~
-git commit
+git commit -m "my short note about my changes"
 ~~~~
-* Takes your **Staged** changes and saves them in the log
+* Takes your **`*staged*`** changes and saves them in the log
+
 Note: Kevin
 
 ---
@@ -151,9 +138,10 @@ Note: Kevin
 ~~~~
 git log
 ~~~~
-* Lets you see your **Commit** history. (History of saves)
+* Lets you see your **`*commit*`** history. (History of saves)
 * This is where gitk and Source Tree help with visualizing commits
-Note: Kevin - extra slides for installing gitk or source tree?
+
+Note: This is where gitk and source tree (GUIs) are very nice
 
 ---
 
@@ -163,7 +151,8 @@ git checkout [file-name]
 ~~~~
 * The undo button
 * Lets you "go back" to the previously committed state of a file(s).
-* Forgets modifications shown in **Staged** and **Unstaged** files.
+* Forgets modifications shown in **`*staged*`** and **`*unstaged*`** files.
+
 Note: Kevin
 
 ---
@@ -172,11 +161,12 @@ Note: Kevin
 ~~~~
 git branch [your-branch-name]
 ~~~~
-* Want to work on a new feature without breaking the project? Make a **branch**!
+* Want to work on a new feature without breaking the project? Make a **`*branch*`**!
 * Branches are like a sandbox
 * You can play in them and not worry about breaking anything
 * Very useful for working with others. Everyone has their own, or multiple, branch(es)!
-Note: Ken
+
+Note: Branches are good for features, trying out ideas without having to setting anythign in stone
 
 ---
 
@@ -184,8 +174,18 @@ Note: Ken
 ~~~~
 git checkout [branch-name]
 ~~~~
-* This command also allows you to **Checkout** other branches.
+* This command also allows you to **`*checkout*`** other branches.
 * Remember that this command, when given a file name, forgets the changes made to that file after the latest commit.
+
+~~~~
+git checkout [file-name]
+~~~~
+vs
+~~~~
+git checkout [branch-name]
+~~~~
+
+Note: git checkout [file-name] vs git checkout [branch-name]
 
 ---
 
@@ -193,7 +193,7 @@ git checkout [branch-name]
 ~~~~
 git checkout -b [branch-name]
 ~~~~
-* This combines the **branch** creation and **Checkout** commands together
+* This combines the **`*branch*`** creation and **`*checkout*`** commands together
 * Useful because the two commands are used frequently and together
 
 Note: Ken
