@@ -6,6 +6,14 @@ with:
 
 ---
 
+## Follow along!
+
+* https://tinyurl.com/fuse-git
+
+Note: Ken
+
+---
+
 ## What is Git?
 
 * Distributed Version Control System
@@ -229,6 +237,34 @@ Note: Ken
 
 ---
 
-//todo add next steps section
-//Todo add slide on help flag
-//TOdo reference materials
+## Resources
+
+http://ohshitgit.com/
+https://sethrobertson.github.io/GitFixUm/fixup.html
+
+---
+
+## git commands
+
+~~~~~
+git version
+git init
+git status
+git add
+git commit
+git log
+gitk
+~~~~~
+
+---
+
+## git commands
+
+~~~~~
+git checkout [file-name]
+git checkout [branch-name]
+git checkout -b [new-branch-name]
+git branch
+git branch [new-branch-name]
+git merge [branch-name]
+~~~~~
