@@ -4,8 +4,6 @@ with:
 * Kevin (harokevin0@gmail.com)
 * Ken (kenschmidt@gmail.com)
 
-https://maigard.github.io/git-class/
-
 ---
 
 ## Follow along!
