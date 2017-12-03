@@ -16,19 +16,32 @@ Note: Ken
 
 ## What is Git?
 
+* Collaboration and versioning tool
 * Distributed Version Control System
 * Written by Linus Torvalds (The linux guy)
-* Widely used industry tool
 
 Note: Ken
 
 ---
 
-## What is Git good for?
+## What problems does git solve?
 
-* Having a "Safe space" to work (branches)
-* Collaborating with others
-* Tracking file changes
+* The 'final' version problem
+
+  * 'final paper'
+  * 'final final paper'
+  * 'final final paper 2'
+  * 'final final paper 2 - Peer reviewed'
+
+Note: Ken
+
+---
+
+## What problems does git solve?
+
+* A better way to “undo” changes
+* A better way to collaborate than mailing files back and forth
+* A better way to share your code and other scientific work with the world
 
 Note: Ken
 
@@ -72,9 +85,9 @@ Note: Lets make sure everyone has git installed
 ---
 
 ## Overview
-* Use git cli
+* Use git cli (command line interface)
 * Modify file
-* Make commits(saves)
+* Make commits (saves)
 * Make branch
 * Merge branch into master
 
