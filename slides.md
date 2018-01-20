@@ -26,12 +26,7 @@ Note: Ken
 
 ## What problems does git solve?
 
-* The 'final' version problem
-
-  * 'final paper'
-  * 'final final paper'
-  * 'final final paper 2'
-  * 'final final paper 2 - Peer reviewed'
+* https://teamtreehouse.com/library/git-basics/why-version-control-matters/life-without-version-control
 
 Note: Ken
 
