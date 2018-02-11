@@ -8,7 +8,7 @@ with:
 
 ## Follow along!
 
-* https://tinyurl.com/fuse-git
+* https://tinyurl.com/git-class
 
 Note: Ken
 
