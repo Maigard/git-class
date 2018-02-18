@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./css/theme/solarized.css" id="theme">
         <link rel="stylesheet" href="./css/highlight/zenburn.css">
         <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
-          <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+          <link rel="stylesheet" href="./_assets/css/font-awesome.min.css">
 
     </head>
     <body>
@@ -21,85 +21,39 @@ with:
 </script></section><section  data-markdown><script type="text/template">
 ## Follow along!
 
-* https://tinyurl.com/fuse-git
-
-<aside class="notes"><p>Ken</p>
-</aside></script></section><section  data-markdown><script type="text/template">
+* https://tinyurl.com/git-class
+</script></section><section  data-markdown><script type="text/template">
 ## What is Git?
 
+* Collaboration and versioning tool
 * Distributed Version Control System
 * Written by Linus Torvalds (The linux guy)
-* Widely used industry tool
+</script></section><section  data-markdown><script type="text/template">
+## What problems does git solve?
 
-<aside class="notes"><p>Ken</p>
-</aside></script></section><section  data-markdown><script type="text/template">
-## What is Git good for?
+* https://teamtreehouse.com/library/git-basics/why-version-control-matters/life-without-version-control
+</script></section><section  data-markdown><script type="text/template">
+## What problems does git solve?
 
-* Having a "Safe space" to work (branches)
-* Collaborating with others
-* Tracking file changes
+* A better way to “undo” changes
+* A better way to collaborate than mailing files back and forth
+* A better way to share your code and other scientific work with the world
+</script></section><section  data-markdown><script type="text/template">
+## Try Git!
 
-<aside class="notes"><p>Ken</p>
-</aside></script></section><section  data-markdown><script type="text/template">
-## Git Clients
-
-* Command Line <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
-  * https://git-scm.com/
-* Source Tree <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
-  * https://www.sourcetreeapp.com/
-* gitk <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
-  * https://git-scm.com/
-* TortoiseGIT <i class="fa fa-windows" aria-hidden="true"></i>
-  * https://tortoisegit.org/
-
-<aside class="notes"><p>Ken</p>
-</aside></script></section><section  data-markdown><script type="text/template">
-## Install Git
-https://git-scm.com/
-
-<aside class="notes"><p>Kevin</p>
-</aside></script></section><section  data-markdown><script type="text/template">
-## Got Git?
-open terminal or command prompt
-
-~~~~
-git version
-~~~~
-or
-~~~~
-git --version
-~~~~
-
-<aside class="notes"><p>Lets make sure everyone has git installed</p>
-</aside></script></section><section  data-markdown><script type="text/template">
-## Overview
-* Use git cli
-* Modify file
-* Make commits(saves)
-* Make branch
-* Merge branch into master
-
-<aside class="notes"><p>use git cli to walk through a git workflow ; Commits: building blocks of git history</p>
-</aside></script></section><section  data-markdown><script type="text/template">
-## Make a folder, any folder
-* Name it "git_basics", maybe?
-<p></p>
-* Open a terminal in the folder
-  * Windows: Shift+Right Click > Open command window
-  * OSX: cd ~/Desktop/git_basics
-
-<aside class="notes"><p>Might have to slow down here</p>
-</aside></script></section><section  data-markdown><script type="text/template">
-## Git Init
+* https://try.github.io/
+</script></section><section  data-markdown><script type="text/template">
+## Starting from Scratch
 ~~~~
 git init
 ~~~~
 * Creates a new **`*repository*`**
 * Transforms your folder into a **`*repository*`**
 
-<aside class="notes"><p>ls -a before and after git init</p>
+<aside class="notes"><p>1.1 <a href="https://try.github.io/levels/1/challenges/1">https://try.github.io/levels/1/challenges/1</a>
+Next 1.2</p>
 </aside></script></section><section  data-markdown><script type="text/template">
-## Git Status
+## What's going on?
 ~~~~
 git status
 ~~~~
@@ -108,31 +62,20 @@ git status
 * **`*staged:*`** changes you want to save
 * **`*unstaged:*`** changes you don't want to save
 
-<aside class="notes"><p>Kevin - Add screenshot to show staged vs unstaged</p>
+<aside class="notes"><p>1.2 <a href="https://try.github.io/levels/1/challenges/2">https://try.github.io/levels/1/challenges/2</a>
+Next 1.4</p>
 </aside></script></section><section  data-markdown><script type="text/template">
-## Let's add a file
-~~~~~
-git status
-~~~~~
-* Create a text file in your repository
-
-~~~~~
-git status
-~~~~~
-* What is different?
-
-<aside class="notes"><p>What is different after adding? Encourage users to <code>git status</code> before and after add</p>
-</aside></script></section><section  data-markdown><script type="text/template">
-## Git Add
+## Time to take the stage
 ~~~~
 git add [file-name]
 ~~~~
 * Adds, or **`*stages*`**, changes for commit
 * Says: "Okay, lets prepare to save this"
 
-<aside class="notes"><p>Make an analogy to accepting someone else&#39;s edits to your paper</p>
+<aside class="notes"><p>1.4 <a href="https://try.github.io/levels/1/challenges/4">https://try.github.io/levels/1/challenges/4</a>
+Next 1.6</p>
 </aside></script></section><section  data-markdown><script type="text/template">
-## Git Commit
+## Get Committed
 ~~~~
 git commit -m "my short note about my changes"
 ~~~~
@@ -144,22 +87,83 @@ On first setup:
 git config --global user.email "your@email.co"
 git config --global user.name "Your Name"
 ~~~~
-<aside class="notes"><p>Kevin</p>
+
+<aside class="notes"><p>1.6 <a href="https://try.github.io/levels/1/challenges/6">https://try.github.io/levels/1/challenges/6</a>
+Next 1.9</p>
 </aside></script></section><section  data-markdown><script type="text/template">
-## Git log
+## What did we do?
 ~~~~
 git log
 ~~~~
 * Lets you see your **`*commit*`** history. (History of saves)
 * This is where gitk and Source Tree help with visualizing commits
 
-~~~~
-gitk
-~~~~
-
-<aside class="notes"><p>This is where gitk and source tree (GUIs) are very nice</p>
+<aside class="notes"><p>1.9 <a href="https://try.github.io/levels/1/challenges/9">https://try.github.io/levels/1/challenges/9</a>
+Next 1.10</p>
 </aside></script></section><section  data-markdown><script type="text/template">
-## Git Checkout
+## Who's out there?
+
+~~~
+git remote add
+~~~
+* Makes a link to a remote repository (i.e. github, bitbucket, gitlab)
+* Used to collaborate with other people working on the project
+
+<aside class="notes"><p>1.10 <a href="https://try.github.io/levels/1/challenges/10">https://try.github.io/levels/1/challenges/10</a>
+Next 1.11</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Take my work!
+
+~~~
+git push
+~~~
+* Pushes local changes to a remote repository
+
+<aside class="notes"><p>1.11 <a href="https://try.github.io/levels/1/challenges/11">https://try.github.io/levels/1/challenges/11</a>
+Next 1.12</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## What did you do?
+
+~~~
+git pull
+~~~
+* Pulls changes made to the remote repository into the local one
+
+<aside class="notes"><p>1.12 <a href="https://try.github.io/levels/1/challenges/12">https://try.github.io/levels/1/challenges/12</a>
+Next 1.13</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## What changed?
+
+~~~
+git diff
+~~~
+* Displays the differences between different versions
+* HEAD in all caps refers to the latest version checked into the repo
+
+<aside class="notes"><p>1.13 <a href="https://try.github.io/levels/1/challenges/13">https://try.github.io/levels/1/challenges/13</a>
+Next 1.15</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## What am I about to do?
+
+~~~
+git diff --staged
+~~~
+* Displays the differences that are on the staged about to be committed
+
+<aside class="notes"><p>1.15 <a href="https://try.github.io/levels/1/challenges/15">https://try.github.io/levels/1/challenges/15</a>
+Next 1.16</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Wait! I don't want to do that.
+
+~~~
+git reset
+~~~
+* Removes a file from the stage
+
+<aside class="notes"><p>1.16 <a href="https://try.github.io/levels/1/challenges/16">https://try.github.io/levels/1/challenges/16</a>
+Next 1.17</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Start Over!
 ~~~~
 git checkout [file-name]
 ~~~~
@@ -167,18 +171,20 @@ git checkout [file-name]
 * Lets you "go back" to the previously committed state of a file(s).
 * Forgets modifications shown in **`*staged*`** and **`*unstaged*`** files.
 
-<aside class="notes"><p>Now that we have our first commit we have a base to checkout agasint</p>
+<aside class="notes"><p>1.17 <a href="https://try.github.io/levels/1/challenges/17">https://try.github.io/levels/1/challenges/17</a>
+Next 1.18</p>
 </aside></script></section><section  data-markdown><script type="text/template">
-## Git Branch
+## Let's try something
 ~~~~
 git branch [your-branch-name]
 ~~~~
 * Want to work on a new feature without breaking the project? Make a **`*branch*`**!
 * Branches are like a sandbox
 
-<aside class="notes"><p>Branches are good for features, A play area where things wont break, trying out new ideas, possible error on spaces</p>
+<aside class="notes"><p>1.18 <a href="https://try.github.io/levels/1/challenges/18">https://try.github.io/levels/1/challenges/18</a>
+Next 1.19</p>
 </aside></script></section><section  data-markdown><script type="text/template">
-## Git Checkout
+## Let's check it out
 ~~~~
 git checkout [branch-name]
 ~~~~
@@ -193,52 +199,68 @@ vs
 git checkout [branch-name]
 ~~~~
 
-<aside class="notes"><p>git checkout [file-name] vs git checkout [branch-name]</p>
+
+<aside class="notes"><p>1.19 <a href="https://try.github.io/levels/1/challenges/19">https://try.github.io/levels/1/challenges/19</a>
+Next checkout -b sidenote</p>
 </aside></script></section><section  data-markdown><script type="text/template">
-## Git Branch and Checkout
+## Shortcut!
 ~~~~
 git checkout -b [branch-name]
 ~~~~
 * This combines the **`*branch*`** creation and **`*checkout*`** commands together
 * Useful because the two commands are used frequently and together
 
-<aside class="notes"><p>Ken</p>
+<aside class="notes"><p>disconnected side note
+Next 1.20</p>
 </aside></script></section><section  data-markdown><script type="text/template">
-## Git Merge
+## I don't Want this anymore
+~~~~
+git rm
+~~~~
+* Removes Files from repository (including the filesystem)
+
+<aside class="notes"><p>1.20 <a href="https://try.github.io/levels/1/challenges/20">https://try.github.io/levels/1/challenges/20</a>
+Next 1.23</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Let's Get Together
 ~~~~
 git merge [branch-name]
 ~~~~
-* Sandbox branch works? Time to recombine with the rest of the project
-* Merging brings the changes you were working on back into your current branch
-<aside class="notes"><p>Ken</p>
+* Merging brings the changes you were working on back in one branch into another
+
+<aside class="notes"><p>1.23 <a href="https://try.github.io/levels/1/challenges/23">https://try.github.io/levels/1/challenges/23</a>
+Next 1.24</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Clean Up
+~~~~
+git branch -d [branch-name]
+~~~~
+* removes a branch from your repository
+
+<aside class="notes"><p>1.24 <a href="https://try.github.io/levels/1/challenges/24">https://try.github.io/levels/1/challenges/24</a>
+No more</p>
 </aside></script></section><section  data-markdown><script type="text/template">
 ## Resources
 
 http://ohshitgit.com/
 https://sethrobertson.github.io/GitFixUm/fixup.html
 </script></section><section  data-markdown><script type="text/template">
-## git commands
+## Git Clients
 
-~~~~~
-git version
-git init
-git status
-git add
-git commit
-git log
-gitk
-~~~~~
+* Command Line <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
+  * https://git-scm.com/
+* Source Tree <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
+  * https://www.sourcetreeapp.com/
+* gitk <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
+  * https://git-scm.com/
+* TortoiseGIT <i class="fa fa-windows" aria-hidden="true"></i>
+  * https://tortoisegit.org/
 </script></section><section  data-markdown><script type="text/template">
-## git commands
+## Next week
 
-~~~~~
-git checkout [file-name]
-git checkout [branch-name]
-git checkout -b [new-branch-name]
-git branch
-git branch [new-branch-name]
-git merge [branch-name]
-~~~~~
+* Homework:
+  - Install a git client
+  - Create a GitHub account
 </script></section></div>
         </div>
 
@@ -285,8 +307,11 @@ git merge [branch-name]
 
             var options = {};
             options = extend(defaultOptions, options, queryOptions);
+        </script>
+
+
+        <script>
             Reveal.initialize(options);
         </script>
-        
     </body>
 </html>
