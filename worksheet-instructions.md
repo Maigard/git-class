@@ -14,6 +14,8 @@ At any given point in the exercise you will either be a `Driver` or an `Observer
 
 You are a driver when it is your turn to follow your worksheet. You are an Observer when someone else in your team is the Driver. It is important that you understand what the worksheet is trying to have you accomplish when you are driving as well as what your teammate(s) is/are trying to accomplish when you are observing.
 
+TODO - add a note on how this workflow differs from day 1
+
 
 # Example Process
 
@@ -26,24 +28,105 @@ You are a driver when it is your turn to follow your worksheet. You are an Obser
 
 
 ## Making changes and opening a pull request
-4) Team member A makes the first set of changes then opens a `Pull Request`
+1) Team member A makes the first set of changes then opens a `Pull Request`
 	- Create a `branch`
 	- Make content changes
 	- `add` changes, stage changes
 	- `commit` changes, save changes
 	- `push` changes to the remote/GitHub
 	- Open a `Pull Request` on GitHub
-5) Team member B reviews and accepts the `Pull Request`
-6) Team member A merges the `Pull Request` into `master`
-7) (Optional) Team members repeat steps 4-6 but B makes changes and merges and A accepts
-- Check point: Has at least one `Pull Request` been merged?
+2) Team member B reviews and accepts the `Pull Request`
+  - Notice how the changes are added to the existing content
+3) Team member A merges the `Pull Request` into `master`
+4) Repeat steps the previous steps but B makes changes and merges and A accepts
+- Check point: Has everyone merged 2 `Pull Requests`?
+- Check point: Is everyone up to date with master?
 
-## The merge conflict
+## Merge conflict and resolution
 
  - When you are working with others in a single file you might encounter a `merge conflict`. This is when you have both modified a file and Git does not know what to do so you have to help it out.
- - More precisely, a `merge conflict` is when you start with the same file as another and they modify it behind your back and merge it into master before you. Then, when you want to merge your changes into master you might encounter a `merge conflict` because the file was modified in two different ways.
+ - More precisely, a `merge conflict` occurs when you start with the same file as another and they modify it behind your back and merge it into master before you. Then, when you want to merge your changes into master you might encounter a `merge conflict` because the file was modified in two different ways.
  - Although merge conflicts do not always happen when working in the same file as another team mate it is important to know how to resolve them for when they do happen.
-8) [ Merge conflict and resolution process ]
+
+### A merges first and B gets a merge conflict
+1) Team member A creates a `branch`
+2) Team member B creates a `branch`
+3-Team Member A) Team member A makes the following changes:
+	- TODO Changes
+3-Team Member B) Team member B makes the following changes:
+	- TODO Changes
+4) All team members `add`, `commit`, `push` and `Pull Request` their changes
+5) All team members review and accept their teammate's `Pull Requests`
+- Check point: notice that everyone's pull request can be merged at this time. There are no conflicts.
+6) Team member A merges the accepted `Pull Request`
+7) Team member B also wants to merge their `Pull Request` but they are unable to because of the `merge conflict`.
+  - To resolve a conflict you will generally want to work with the person that last made changes. In this scenario that would be Team Member A.
+8) Team Member B - Lets say you come to a consensus with your team mate and this is how the merge conflict will be handled:
+9) After the changes are made, `add`, `commit`, and `push` the changes.
+10) Get the merge conflict resolution changes's re-reviewed by the team.
+11) Team Member B merges the accepted `Pull Request`.
+- Check point: Team member B has encountered and resolved a merge conflict.
+
+
+### B merges first and A gets a merge conflict
+1) Team member A creates a `branch`
+2) Team member B creates a `branch`
+3-Team Member A) Team member A makes the following changes:
+	- TODO Changes
+3-Team Member B) Team member B makes the following changes:
+	- TODO Changes
+4) All team members `add`, `commit`, `push` and `Pull Request` their changes
+5) All team members review and accept their teammate's `Pull Requests`
+- Check point: notice that everyone's pull request can be merged at this time. There are no conflicts.
+6) Team member B merges the accepted `Pull Request`
+7) Team member A also wants to merge their `Pull Request` but they are unable to because of the `merge conflict`.
+  - To resolve a conflict you will generally want to work with the person that last made changes. In this scenario that would be Team Member B.
+8) Team Member A - Lets say you come to a consensus with your team mate and this is how the merge conflict will be handled:
+9) After the changes are made, `add`, `commit`, and `push` the changes.
+10) Get the merge conflict resolution changes's re-reviewed by the team.
+11) Team Member A merges the accepted `Pull Request`.
+- Check point: Team member A has encountered and resolved a merge conflict.
+
+
+### C merges first and B gets a merge conflict
+1) Team member B creates a `branch`
+2) Team member C creates a `branch`
+3-Team Member B) Team member A makes the following changes:
+	- TODO Changes
+3-Team Member C) Team member C makes the following changes:
+	- TODO Changes
+4) All team members `add`, `commit`, `push` and `Pull Request` their changes
+5) All team members review and accept their teammate's `Pull Requests`
+- Check point: notice that everyone's pull request can be merged at this time. There are no conflicts.
+6) Team member C merges the accepted `Pull Request`
+7) Team member B also wants to merge their `Pull Request` but they are unable to because of the `merge conflict`.
+  - To resolve a conflict you will generally want to work with the person that last made changes. In this scenario that would be Team Member C.
+8) Team Member B - Lets say you come to a consensus with your team mate and this is how the merge conflict will be handled:
+9) After the changes are made, `add`, `commit`, and `push` the changes.
+10) Get the merge conflict resolution changes's re-reviewed by the team.
+11) Team Member B merges the accepted `Pull Request`.
+- Check point: Team member C has encountered and resolved a merge conflict.
+
+
+### A merges first and C gets a merge conflict
+1) Team member A creates a `branch`
+2) Team member C creates a `branch`
+3-Team Member A) Team member A makes the following changes:
+	- TODO Changes
+3-Team Member C) Team member C makes the following changes:
+	- TODO Changes
+4) All team members `add`, `commit`, `push` and `Pull Request` their changes
+5) All team members review and accept their teammate's `Pull Requests`
+- Check point: notice that everyone's pull request can be merged at this time. There are no conflicts.
+6) Team member A merges the accepted `Pull Request`
+7) Team member C also wants to merge their `Pull Request` but they are unable to because of the `merge conflict`.
+  - To resolve a conflict you will generally want to work with the person that last made changes. In this scenario that would be Team Member A.
+8) Team Member C - Lets say you come to a consensus with your team mate and this is how the merge conflict will be handled:
+9) After the changes are made, `add`, `commit`, and `push` the changes.
+10) Get the merge conflict resolution changes's re-reviewed by the team.
+11) Team Member C merges the accepted `Pull Request`.
+- Check point: Team member C has encountered and resolved a merge conflict.
+
 
 
 ## Tips
