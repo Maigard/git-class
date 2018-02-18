@@ -49,85 +49,191 @@ TODO - add a note on how this workflow differs from day 1
  - Although merge conflicts do not always happen when working in the same file as another team mate it is important to know how to resolve them for when they do happen.
 
 ### A merges first and B gets a merge conflict
-1) Team member A creates a `branch`
-2) Team member B creates a `branch`
+1) Team member A creates a `branch` named `fix-typos`
+2) Team member B creates a `branch` named `typo-fix`
 3-Team Member A) Team member A makes the following changes:
-	- TODO Changes
+	- recipes/rick_and_morty_szechuan_sauce.md
+	 ` - Gresh ginger` => ` - Fresh ginger`
+
 3-Team Member B) Team member B makes the following changes:
-	- TODO Changes
+	- recipes/rick_and_morty_szechuan_sauce.md
+	 ` - Gresh ginger` => ` - Gresh ginger paste`
+
 4) All team members `add`, `commit`, `push` and `Pull Request` their changes
 5) All team members review and accept their teammate's `Pull Requests`
 - Check point: notice that everyone's pull request can be merged at this time. There are no conflicts.
 6) Team member A merges the accepted `Pull Request`
-7) Team member B also wants to merge their `Pull Request` but they are unable to because of the `merge conflict`.
+- Check point: notice thatTeam member B's pull request can not be merged at this time.
+	- Team member B also wants to merge their `Pull Request` but they are unable to because of the `merge conflict`.
   - To resolve a conflict you will generally want to work with the person that last made changes. In this scenario that would be Team Member A.
-8) Team Member B - Lets say you come to a consensus with your team mate and this is how the merge conflict will be handled:
-9) After the changes are made, `add`, `commit`, and `push` the changes.
+	- You will see something like this in your file that Git has added:
+	```
+	<<<<<<< HEAD
+	 - Gresh ginger paste
+	=======
+	 - Fresh ginger
+	>>>>>>> master
+	```
+
+	- The general structure of this is:
+	```
+	<<<<<<< your_changes
+		[content that you have changed]
+	=======
+		[same line that was changed by another branch you are merging with]
+	>>>>>>> branch_you_are_merging_with
+	```
+
+7) Team Member B - Lets say you come to a consensus with your teammate and this is how the merge conflict will be handled:
+	The line should be `- Fresh ginger paste`. Not `- Gresh ginger paste` or ` - Fresh ginger`
+
+	To resolve this conflict replace the Git added block with what the line should be:
+		```
+		<<<<<<< HEAD
+		 - Gresh ginger paste
+		=======
+		 - Fresh ginger
+		>>>>>>> master
+		```
+
+		to =>
+
+		`- Fresh ginger paste`
+
+	Make sure you always remove the general merge conflict structure.
+
+8) Once you are done merging, `add` and `commit` the changes to resolve the conflict
+ - notice that it will take you into a special command line editor that will have a commit name suggestion.
+ - to write/save the name of this commit and then quit the editor do the following:
+  	-- press escape
+		-- type `:qw`
+		-- press enter
+ - you should now be back at the normal command line
+9) After the changes are made `push` the changes.
 10) Get the merge conflict resolution changes's re-reviewed by the team.
 11) Team Member B merges the accepted `Pull Request`.
 - Check point: Team member B has encountered and resolved a merge conflict.
 
 
 ### B merges first and A gets a merge conflict
-1) Team member A creates a `branch`
-2) Team member B creates a `branch`
+Repeat the scenario above but swap roles
+
+1) Team member A creates a `branch` named `ammend-chili`
+2) Team member B creates a `branch` named `fix-chili-pow`
+
 3-Team Member A) Team member A makes the following changes:
-	- TODO Changes
+	- recipes/rick_and_morty_szechuan_sauce.md
+	 ` - Chili paste (if you’re looking for heat)` => ` - Chili paste`
+
 3-Team Member B) Team member B makes the following changes:
-	- TODO Changes
-4) All team members `add`, `commit`, `push` and `Pull Request` their changes
-5) All team members review and accept their teammate's `Pull Requests`
-- Check point: notice that everyone's pull request can be merged at this time. There are no conflicts.
-6) Team member B merges the accepted `Pull Request`
-7) Team member A also wants to merge their `Pull Request` but they are unable to because of the `merge conflict`.
-  - To resolve a conflict you will generally want to work with the person that last made changes. In this scenario that would be Team Member B.
-8) Team Member A - Lets say you come to a consensus with your team mate and this is how the merge conflict will be handled:
-9) After the changes are made, `add`, `commit`, and `push` the changes.
-10) Get the merge conflict resolution changes's re-reviewed by the team.
-11) Team Member A merges the accepted `Pull Request`.
-- Check point: Team member A has encountered and resolved a merge conflict.
+	- recipes/rick_and_morty_szechuan_sauce.md
+	 ` - Chili paste (if you’re looking for heat)` => ` - Chili powder (if you’re looking for heat)`
+
+These changes will result in a merge conflict that looks something like this:
+```
+<<<<<<< HEAD
+ - Chili paste
+=======
+ - Chili powder (if you’re looking for heat)
+>>>>>>> master
+```
+
+the resolution to this merge conflict will look like
+
+```
+<<<<<<< HEAD
+ - Chili paste
+=======
+ - Chili powder (if you’re looking for heat)
+>>>>>>> master
+```
+
+to =>
+
+`Chili paste or powder`
+
+
 
 
 ### C merges first and B gets a merge conflict
-1) Team member B creates a `branch`
-2) Team member C creates a `branch`
-3-Team Member B) Team member A makes the following changes:
-	- TODO Changes
-3-Team Member C) Team member C makes the following changes:
-	- TODO Changes
-4) All team members `add`, `commit`, `push` and `Pull Request` their changes
-5) All team members review and accept their teammate's `Pull Requests`
-- Check point: notice that everyone's pull request can be merged at this time. There are no conflicts.
-6) Team member C merges the accepted `Pull Request`
-7) Team member B also wants to merge their `Pull Request` but they are unable to because of the `merge conflict`.
-  - To resolve a conflict you will generally want to work with the person that last made changes. In this scenario that would be Team Member C.
-8) Team Member B - Lets say you come to a consensus with your team mate and this is how the merge conflict will be handled:
-9) After the changes are made, `add`, `commit`, and `push` the changes.
-10) Get the merge conflict resolution changes's re-reviewed by the team.
-11) Team Member B merges the accepted `Pull Request`.
-- Check point: Team member C has encountered and resolved a merge conflict.
+Repeat the scenario above but swap roles
+
+1) Team member C creates a `branch` named `sugar-fix`
+2) Team member B creates a `branch` named `fix-packed-sugar`
+
+3-Team Member C) Team member A makes the following changes:
+	- recipes/rick_and_morty_szechuan_sauce.md
+	 ` - 4 tbs of brown sugar` => ` - 6 tbs of brown sugar`
+
+3-Team Member B) Team member B makes the following changes:
+	- recipes/rick_and_morty_szechuan_sauce.md
+	 ` - 4 tbs of brown sugar` => ` - 4 tbs of packed brown sugar`
+
+These changes will result in a merge conflict that looks something like this:
+```
+<<<<<<< HEAD
+  - 4 tbs of packed brown sugar
+=======
+  - 6 tbs of brown sugar
+>>>>>>> master
+```
+
+the resolution to this merge conflict will look like
+
+```
+<<<<<<< HEAD
+  - 4 tbs of packed brown sugar
+=======
+  - 6 tbs of brown sugar
+>>>>>>> master
+```
+
+to =>
+
+`- 6 tbs of packed brown sugar`
 
 
 ### A merges first and C gets a merge conflict
-1) Team member A creates a `branch`
-2) Team member C creates a `branch`
+Repeat the scenario above but swap roles
+
+1) Team member A creates a `branch` named `instructions-fix`
+2) Team member C creates a `branch` named `chill-instructions`
+
 3-Team Member A) Team member A makes the following changes:
-	- TODO Changes
-3-Team Member C) Team member C makes the following changes:
-	- TODO Changes
-4) All team members `add`, `commit`, `push` and `Pull Request` their changes
-5) All team members review and accept their teammate's `Pull Requests`
-- Check point: notice that everyone's pull request can be merged at this time. There are no conflicts.
-6) Team member A merges the accepted `Pull Request`
-7) Team member C also wants to merge their `Pull Request` but they are unable to because of the `merge conflict`.
-  - To resolve a conflict you will generally want to work with the person that last made changes. In this scenario that would be Team Member A.
-8) Team Member C - Lets say you come to a consensus with your team mate and this is how the merge conflict will be handled:
-9) After the changes are made, `add`, `commit`, and `push` the changes.
-10) Get the merge conflict resolution changes's re-reviewed by the team.
-11) Team Member C merges the accepted `Pull Request`.
-- Check point: Team member C has encountered and resolved a merge conflict.
+	- recipes/rick_and_morty_szechuan_sauce.md
+	 ` - Strain, cover and let it cool down.` => ` - Strain, cover, and let it cool down.`
+
+3-Team Member C) Team member B makes the following changes:
+	- recipes/rick_and_morty_szechuan_sauce.md
+	 ` - Strain, cover and let it cool down.` => ` - Strain, cover and let it chill.`
+
+These changes will result in a merge conflict that looks something like this:
+```
+<<<<<<< HEAD
+ - Strain, cover and let it chill.
+=======
+ - Strain, cover, and let it cool down.
+>>>>>>> master
+```
+
+the resolution to this merge conflict will look like
+
+```
+<<<<<<< HEAD
+ - Strain, cover and let it chill.
+=======
+ - Strain, cover, and let it cool down.
+>>>>>>> master
+```
+
+to =>
+
+` - Strain, cover, and let it chill.`
 
 
+ - Check point: make sure everyone in your team has encountered a merge conflict and also been the person to merge first(not encounter the merge conflict.)
+
+# TODO Formatting
 
 ## Tips
 
