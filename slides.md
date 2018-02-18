@@ -49,6 +49,7 @@ git init
 
 Note: 1.1 https://try.github.io/levels/1/challenges/1
 Next 1.2
+
 ---
 
 ## What's going on?
@@ -62,6 +63,7 @@ git status
 
 Note: 1.2 https://try.github.io/levels/1/challenges/2
 Next 1.4
+
 ---
 
 ## Time to take the stage
@@ -73,6 +75,7 @@ git add [file-name]
 
 Note: 1.4 https://try.github.io/levels/1/challenges/4
 Next 1.6
+
 ---
 
 ## Get Committed
@@ -270,6 +273,19 @@ No more
 
 ---
 
+## Next week
+
+* Homework:
+  - Install a git client
+  - Create a GitHub account
+  - Install a Text Editor (Optional)
+
+---
+
+## Day 2
+
+---
+
 ## Resources
 
 http://ohshitgit.com/
@@ -288,10 +304,3 @@ https://sethrobertson.github.io/GitFixUm/fixup.html
 * TortoiseGIT <i class="fa fa-windows" aria-hidden="true"></i>
   * https://tortoisegit.org/
 
----
-
-## Next week
-
-* Homework:
-  - Install a git client
-  - Create a GitHub account
