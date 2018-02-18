@@ -44,8 +44,8 @@ with:
 ~~~~
 git init
 ~~~~
-* Creates a new **`*repository*`**
-* Transforms your folder into a **`*repository*`**
+* Creates a new **`repository`**
+* Transforms your folder into a **`repository`**
 
 Note: 1.1 https://try.github.io/levels/1/challenges/1
 Next 1.2
@@ -56,10 +56,10 @@ Next 1.2
 ~~~~
 git status
 ~~~~
-* View the status of your **`*repository*`**
-* Shows you **`*staged*`** and **`*unstaged*`** changes
-* **`*staged:*`** changes you want to save
-* **`*unstaged:*`** changes you don't want to save
+* View the status of your **`repository`**
+* Shows you **`staged`** and **`unstaged`** changes
+* **`staged:`** changes you want to save
+* **`unstaged:`** changes you don't want to save
 
 Note: 1.2 https://try.github.io/levels/1/challenges/2
 Next 1.4
@@ -70,7 +70,7 @@ Next 1.4
 ~~~~
 git add [file-name]
 ~~~~
-* Adds, or **`*stages*`**, changes for commit
+* Adds, or **`stages`**, changes for commit
 * Says: "Okay, lets prepare to save this"
 
 Note: 1.4 https://try.github.io/levels/1/challenges/4
@@ -82,7 +82,7 @@ Next 1.6
 ~~~~
 git commit -m "my short note about my changes"
 ~~~~
-* Takes your **`*staged*`** changes and saves them in the log
+* Takes your **`staged`** changes and saves them in the log
 <p></p>
 
 On first setup:
@@ -100,7 +100,7 @@ Next 1.9
 ~~~~
 git log
 ~~~~
-* Lets you see your **`*commit*`** history. (History of saves)
+* Lets you see your **`commit`** history. (History of saves)
 * This is where gitk and Source Tree help with visualizing commits
 
 Note: 1.9 https://try.github.io/levels/1/challenges/9
@@ -188,7 +188,7 @@ git checkout [file-name]
 ~~~~
 * The undo button
 * Lets you "go back" to the previously committed state of a file(s).
-* Forgets modifications shown in **`*staged*`** and **`*unstaged*`** files.
+* Forgets modifications shown in **`staged`** and **`unstaged`** files.
 
 Note: 1.17 https://try.github.io/levels/1/challenges/17
 Next 1.18
@@ -199,7 +199,7 @@ Next 1.18
 ~~~~
 git branch [your-branch-name]
 ~~~~
-* Want to work on a new feature without breaking the project? Make a **`*branch*`**!
+* Want to work on a new feature without breaking the project? Make a **`branch`**!
 * Branches are like a sandbox
 
 Note: 1.18 https://try.github.io/levels/1/challenges/18
@@ -211,7 +211,7 @@ Next 1.19
 ~~~~
 git checkout [branch-name]
 ~~~~
-* This command also allows you to **`*checkout*`** other branches.
+* This command also allows you to **`checkout`** other branches.
 * Remember that this command, when given a file name, forgets the changes made to that file after the latest commit.
 
 ~~~~
@@ -232,7 +232,7 @@ Next checkout -b sidenote
 ~~~~
 git checkout -b [branch-name]
 ~~~~
-* This combines the **`*branch*`** creation and **`*checkout*`** commands together
+* This combines the **`branch`** creation and **`checkout`** commands together
 * Useful because the two commands are used frequently and together
 
 Note: disconnected side note
