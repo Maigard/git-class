@@ -47,4 +47,4 @@ To help you get more comfortable with the command line follow these steps:
 
 
 
-Email harokevin0@gmail.com or with any questions.
+Email harokevin0@gmail.com or kenschmidt@gmail.com with any questions.
