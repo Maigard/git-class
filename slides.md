@@ -101,7 +101,6 @@ Next 1.9
 git log
 ~~~~
 * Lets you see your **`commit`** history. (History of saves)
-* This is where gitk and Source Tree help with visualizing commits
 
 Note: 1.9 https://try.github.io/levels/1/challenges/9
 Next 1.10
@@ -282,7 +281,63 @@ No more
 
 ---
 
-## Day 2
+# Day 2
+
+# Git
+
+with:
+* Kevin (harokevin0@gmail.com)
+* Ken (kenschmidt@gmail.com)
+
+---
+
+## Recap
+
+
+---
+
+## Overview
+
+* Teams of 2-3
+  - You will be A, B, or C in your team
+* Complete the worksheet drills at
+
+~~~
+tinyurl.com/git-class-woksheet
+~~~
+~~~
+github.com/Maigard/git-class -> worksheet-instructions.md
+~~~
+---
+
+## Tips
+
+* Work as a group
+
+* One step at a time
+
+* Use check points
+
+* Ask for help or clarification
+
+~~~
+tinyurl.com/git-class-woksheet
+~~~
+~~~
+github.com/Maigard/git-class -> worksheet-instructions.md
+~~~
+
+---
+
+## Tips for after tonight
+
+* Practice! Practice! Practice!
+
+* Fork or clone other existing projects
+
+* Learn new git commands and shortcuts
+
+* Look into using a GUI
 
 ---
 
@@ -297,10 +352,9 @@ https://sethrobertson.github.io/GitFixUm/fixup.html
 
 * Command Line <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
   * https://git-scm.com/
+* Git Kraken <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
+  * https://www.gitkraken.com/
 * Source Tree <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
   * https://www.sourcetreeapp.com/
-* gitk <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
-  * https://git-scm.com/
 * TortoiseGIT <i class="fa fa-windows" aria-hidden="true"></i>
   * https://tortoisegit.org/
-
