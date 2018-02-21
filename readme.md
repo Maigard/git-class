@@ -12,4 +12,4 @@ reveal-md slides.md
 * You might need to install node package manager(npm)
 
 
-# [Day 1 Homework](day-1-Homework.md)
+# [Day 1 Homework](day-1-homework.md)
