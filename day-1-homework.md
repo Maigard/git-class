@@ -1,4 +1,4 @@
-# Install git on your computer - https://git-scm.com
+# Install git on your computer - `git-scm.com`
 
 To help you get more comfortable with the command line follow these steps:
 
@@ -19,7 +19,7 @@ To help you get more comfortable with the command line follow these steps:
    - The .git folder is what git creates and uses to track changes
 
 
-# Create a GitHub account - https://github.com/join
+# Create a GitHub account - `github.com/join`
 
 This is where you can store and share repositories with friends
 
@@ -27,14 +27,14 @@ You will need a GitHub account for day 2
 
 
 # Install a text editor from this list (optional)
-	Atom - https://atom.io
-	Brackets - http://brackets.io
-	Visual Studios Code - https://code.visualstudio.com
-	Sublime Text - https://www.sublimetext.com
-	Notepad++  - https://notepad-plus-plus.org
+	Atom - `atom.io`
+	Brackets - `brackets.io`
+	Visual Studios Code - `code.visualstudio.com`
+	Sublime Text - `www.sublimetext.com`
+	Notepad++  - `notepad-plus-plus.org`
 
 
-# Review the slides or try.github.io in preparation for day 2
+# Review the slides or `try.github.io` in preparation for day 2
 
 
 
