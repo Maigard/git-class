@@ -9,7 +9,7 @@ Install reveal-md and launch the presentation
 npm install -g reveal-md
 reveal-md slides.md
 ```
-
+* You might need to install node package manager(npm)
 
 
 # Day 1 Homework
@@ -35,7 +35,14 @@ To help you get more comfortable with the command line follow these steps:
    - The .git folder is what git creates and uses to track changes
 
 
-#### Install a text editor from this list
+#### Create a GitHub account - https://github.com/join
+
+This is where you can store and share repositories with friends
+
+You will need a GitHub account for day 2
+
+
+#### Install a text editor from this list (optional)
 	Atom - https://atom.io
 	Brackets - http://brackets.io
 	Visual Studios Code - https://code.visualstudio.com
@@ -43,7 +50,7 @@ To help you get more comfortable with the command line follow these steps:
 	Notepad++  - https://notepad-plus-plus.org
 
 
-#### Review the cheat sheet and get comfortable with the vocabulary in preparation for day 2.
+#### Review the slides or try.github.io in preparation for day 2
 
 
 
