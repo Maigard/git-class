@@ -279,6 +279,9 @@ No more
   - Create a GitHub account
   - Install a Text Editor (Optional)
 
+* Slides: https://tinyurl.com/git-class
+* Repository: https://github.com/Maigard/git-class
+
 ---
 
 # Day 2
