@@ -47,8 +47,8 @@ with:
 ~~~~
 git init
 ~~~~
-* Creates a new **`*repository*`**
-* Transforms your folder into a **`*repository*`**
+* Creates a new **`repository`**
+* Transforms your folder into a **`repository`**
 
 <aside class="notes"><p>1.1 <a href="https://try.github.io/levels/1/challenges/1">https://try.github.io/levels/1/challenges/1</a>
 Next 1.2</p>
@@ -57,10 +57,10 @@ Next 1.2</p>
 ~~~~
 git status
 ~~~~
-* View the status of your **`*repository*`**
-* Shows you **`*staged*`** and **`*unstaged*`** changes
-* **`*staged:*`** changes you want to save
-* **`*unstaged:*`** changes you don't want to save
+* View the status of your **`repository`**
+* Shows you **`staged`** and **`unstaged`** changes
+* **`staged:`** changes you want to save
+* **`unstaged:`** changes you don't want to save
 
 <aside class="notes"><p>1.2 <a href="https://try.github.io/levels/1/challenges/2">https://try.github.io/levels/1/challenges/2</a>
 Next 1.4</p>
@@ -69,7 +69,7 @@ Next 1.4</p>
 ~~~~
 git add [file-name]
 ~~~~
-* Adds, or **`*stages*`**, changes for commit
+* Adds, or **`stages`**, changes for commit
 * Says: "Okay, lets prepare to save this"
 
 <aside class="notes"><p>1.4 <a href="https://try.github.io/levels/1/challenges/4">https://try.github.io/levels/1/challenges/4</a>
@@ -79,7 +79,7 @@ Next 1.6</p>
 ~~~~
 git commit -m "my short note about my changes"
 ~~~~
-* Takes your **`*staged*`** changes and saves them in the log
+* Takes your **`staged`** changes and saves them in the log
 <p></p>
 
 On first setup:
@@ -95,8 +95,7 @@ Next 1.9</p>
 ~~~~
 git log
 ~~~~
-* Lets you see your **`*commit*`** history. (History of saves)
-* This is where gitk and Source Tree help with visualizing commits
+* Lets you see your **`commit`** history. (History of saves)
 
 <aside class="notes"><p>1.9 <a href="https://try.github.io/levels/1/challenges/9">https://try.github.io/levels/1/challenges/9</a>
 Next 1.10</p>
@@ -169,7 +168,7 @@ git checkout [file-name]
 ~~~~
 * The undo button
 * Lets you "go back" to the previously committed state of a file(s).
-* Forgets modifications shown in **`*staged*`** and **`*unstaged*`** files.
+* Forgets modifications shown in **`staged`** and **`unstaged`** files.
 
 <aside class="notes"><p>1.17 <a href="https://try.github.io/levels/1/challenges/17">https://try.github.io/levels/1/challenges/17</a>
 Next 1.18</p>
@@ -178,7 +177,7 @@ Next 1.18</p>
 ~~~~
 git branch [your-branch-name]
 ~~~~
-* Want to work on a new feature without breaking the project? Make a **`*branch*`**!
+* Want to work on a new feature without breaking the project? Make a **`branch`**!
 * Branches are like a sandbox
 
 <aside class="notes"><p>1.18 <a href="https://try.github.io/levels/1/challenges/18">https://try.github.io/levels/1/challenges/18</a>
@@ -188,7 +187,7 @@ Next 1.19</p>
 ~~~~
 git checkout [branch-name]
 ~~~~
-* This command also allows you to **`*checkout*`** other branches.
+* This command also allows you to **`checkout`** other branches.
 * Remember that this command, when given a file name, forgets the changes made to that file after the latest commit.
 
 ~~~~
@@ -207,7 +206,7 @@ Next checkout -b sidenote</p>
 ~~~~
 git checkout -b [branch-name]
 ~~~~
-* This combines the **`*branch*`** creation and **`*checkout*`** commands together
+* This combines the **`branch`** creation and **`checkout`** commands together
 * Useful because the two commands are used frequently and together
 
 <aside class="notes"><p>disconnected side note
@@ -240,6 +239,66 @@ git branch -d [branch-name]
 <aside class="notes"><p>1.24 <a href="https://try.github.io/levels/1/challenges/24">https://try.github.io/levels/1/challenges/24</a>
 No more</p>
 </aside></script></section><section  data-markdown><script type="text/template">
+## Next week
+
+* Homework:
+  - Install a git client
+  - Create a GitHub account
+  - Install a Text Editor (Optional)
+
+* Slides: https://tinyurl.com/git-class
+* Repository: https://github.com/Maigard/git-class
+</script></section><section  data-markdown><script type="text/template">
+# Day 2
+
+# Git
+
+with:
+* Kevin (harokevin0@gmail.com)
+* Ken (kenschmidt@gmail.com)
+</script></section><section  data-markdown><script type="text/template">
+## Recap
+
+</script></section><section  data-markdown><script type="text/template">
+## Overview
+
+* Teams of 2-3
+  - You will be A, B, or C in your team
+* Complete the worksheet drills at
+
+~~~
+tinyurl.com/git-class-woksheet
+~~~
+~~~
+github.com/Maigard/git-class -> worksheet-instructions.md
+~~~</script></section><section  data-markdown><script type="text/template">
+## Tips
+
+* Work as a group
+
+* One step at a time
+
+* Use check points
+
+* Ask for help or clarification
+
+~~~
+tinyurl.com/git-class-woksheet
+~~~
+~~~
+github.com/Maigard/git-class -> worksheet-instructions.md
+~~~
+</script></section><section  data-markdown><script type="text/template">
+## Tips for after tonight
+
+* Practice! Practice! Practice!
+
+* Fork or clone other existing projects
+
+* Learn new git commands and shortcuts
+
+* Look into using a GUI
+</script></section><section  data-markdown><script type="text/template">
 ## Resources
 
 http://ohshitgit.com/
@@ -249,18 +308,12 @@ https://sethrobertson.github.io/GitFixUm/fixup.html
 
 * Command Line <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
   * https://git-scm.com/
+* Git Kraken <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
+  * https://www.gitkraken.com/
 * Source Tree <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
   * https://www.sourcetreeapp.com/
-* gitk <i class="fa fa-linux" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-windows" aria-hidden="true"></i>
-  * https://git-scm.com/
 * TortoiseGIT <i class="fa fa-windows" aria-hidden="true"></i>
   * https://tortoisegit.org/
-</script></section><section  data-markdown><script type="text/template">
-## Next week
-
-* Homework:
-  - Install a git client
-  - Create a GitHub account
 </script></section></div>
         </div>
 
