@@ -1,20 +1,23 @@
-# Example Process
-
 ## Setup
 
-1) Team member A forks the demo repository(https://github.com/harokevin/recipes)
+1) Team member A forks the demo repository from https://github.com/harokevin/recipes
+<!-- TODO link fork screenshot -->
 2) Team member A gives team member B access to team member A's fork on GitHub
+<!-- TODO link collaborators screenshot -->
 3) Team member A and B clone team member A's online fork onto their computers
+<!-- TODO link copy url and clone screenshot -->
 - Check Point: Do all teammates have a version of the fork on their computers?
 
 
 ## Making changes and opening a pull request
+- In this block one person will make add an instruction to a recipe in the repository
 1) Team member A makes the first set of changes then opens a `Pull Request`
-	- Create a `branch`
-	- Make content changes
-	- `add` changes, stage changes
-	- `commit` changes, save changes
+	- Create a `branch` - name it after what you want to accomplish (no spaces). `add-instruction-to-cookies`  
+	- Make content changes: open any .md file in the project and add a direction step like `Lets Party` or `Give to neighbors`.
+	- `add` changes - stages changes
+	- `commit` changes - saves changes
 	- `push` changes to the remote/GitHub
+    - There might be an extra step that looks something like
 	- Open a `Pull Request` on GitHub
 2) Team member B reviews and accepts the `Pull Request`
   - Notice how the changes are added to the existing content
@@ -31,11 +34,7 @@
 
 ### A merges first and B gets a merge conflict
 1) Team member A creates a `branch` named `fix-typos`
-2) Team member B creates a `branch` named `typo-fix`
-3-Team Member A) Team member A makes the following changes:
-	- recipes/rick_and_morty_szechuan_sauce.md
-	 ` - Gresh ginger` => ` - Fresh ginger`
-
+2) Team 
 3-Team Member B) Team member B makes the following changes:
 	- recipes/rick_and_morty_szechuan_sauce.md
 	 ` - Gresh ginger` => ` - Gresh ginger paste`
