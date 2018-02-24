@@ -48,15 +48,19 @@
 
 1) Team member A creates a `branch` named `fix-typos`
 2) Team member B creates a `branch` named `typo-fix`
-3-Team Member B) Team member B makes the following changes:
+3-Team Member A) Team member A makes the following changes:
 	- recipes/rick_and_morty_szechuan_sauce.md
-	 ` - Gresh ginger` => ` - Gresh ginger paste`
+	 ` - Gresh ginger` => ` - Fresh ginger`
+
+3-Team Member B) Team member B makes the following changes:
+  - recipes/rick_and_morty_szechuan_sauce.md
+   ` - Gresh ginger` => ` - Gresh ginger paste`
 
 4) All team members `add`, `commit`, `push` and `Pull Request` their changes
 5) All team members review and accept their teammate's `Pull Requests`
 - Check point: notice that everyone's pull request can be merged at this time. There are no conflicts.
 6) Team member A merges the accepted `Pull Request`
-- Check point: notice thatTeam member B's pull request can not be merged at this time.
+- Check point: notice that team member B's pull request can not be merged at this time.
 	- Team member B also wants to merge their `Pull Request` but they are unable to because of the `merge conflict`.
   - To resolve a conflict you will generally want to work with the person that last made changes. In this scenario that would be Team Member A.
 	- You will see something like this in your file that Git has added:
@@ -99,7 +103,7 @@
  - notice that it will take you into a special command line editor that will have a commit name suggestion.
  - to write/save the name of this commit and then quit the editor do the following:
   	-- press escape
-		-- type `:qw`
+		-- type `:wq`
 		-- press enter
  - you should now be back at the normal command line
 9) After the changes are made `push` the changes.
@@ -109,126 +113,72 @@
 
 
 ### B merges first and A gets a merge conflict
-Repeat the scenario above but swap roles
+- Goal: In this block two different people will make different changes to the same line of a file. This would happen if both teammates saw an error with the line but had different ways to resolve the error.
 
-1) Team member A creates a `branch` named `ammend-chili`
+1) Team member A creates a `branch` named `amend-chili`
 2) Team member B creates a `branch` named `fix-chili-pow`
-
 3-Team Member A) Team member A makes the following changes:
 	- recipes/rick_and_morty_szechuan_sauce.md
 	 ` - Chili paste (if you’re looking for heat)` => ` - Chili paste`
 
 3-Team Member B) Team member B makes the following changes:
-	- recipes/rick_and_morty_szechuan_sauce.md
-	 ` - Chili paste (if you’re looking for heat)` => ` - Chili powder (if you’re looking for heat)`
+  - recipes/rick_and_morty_szechuan_sauce.md
+   ` - Chili paste (if you’re looking for heat)` => ` - Chili powder (if you’re looking for heat)`
 
-These changes will result in a merge conflict that looks something like this:
-```
-<<<<<<< HEAD
- - Chili paste
-=======
- - Chili powder (if you’re looking for heat)
->>>>>>> master
-```
+4) All team members `add`, `commit`, `push` and `Pull Request` their changes
+5) All team members review and accept their teammate's `Pull Requests`
+- Check point: notice that everyone's pull request can be merged at this time. There are no conflicts.
+6) Team member B merges the accepted `Pull Request`
+- Check point: notice that team member A's pull request can not be merged at this time.
+	- Team member A also wants to merge their `Pull Request` but they are unable to because of the `merge conflict`.
+  - To resolve a conflict you will generally want to work with the person that last made changes. In this scenario that would be Team Member B.
+	- You will see something like this in your file that Git has added:
+    ```
+    <<<<<<< HEAD
+     - Chili paste
+    =======
+     - Chili powder (if you’re looking for heat)
+    >>>>>>> master
+    ```
 
-the resolution to this merge conflict will look like
+7) Team Member A - Lets say you come to a consensus with your teammate and this is how the merge conflict will be handled:
+	The line should be ` - Chili paste or powder`. Not ` - Chili paste` or ` - Chili powder (if you’re looking for heat)`
 
-```
-<<<<<<< HEAD
- - Chili paste
-=======
- - Chili powder (if you’re looking for heat)
->>>>>>> master
-```
+	To resolve this conflict replace the Git added block with what the line should be:
+  ```
+  <<<<<<< HEAD
+   - Chili paste
+  =======
+   - Chili powder (if you’re looking for heat)
+  >>>>>>> master
+  ```
 
-to =>
+  to =>
 
-`Chili paste or powder`
+  `Chili paste or powder`
 
+	Make sure you always remove the general merge conflict structure.
 
-
-
-### C merges first and B gets a merge conflict
-Repeat the scenario above but swap roles
-
-1) Team member C creates a `branch` named `sugar-fix`
-2) Team member B creates a `branch` named `fix-packed-sugar`
-
-3-Team Member C) Team member A makes the following changes:
-	- recipes/rick_and_morty_szechuan_sauce.md
-	 ` - 4 tbs of brown sugar` => ` - 6 tbs of brown sugar`
-
-3-Team Member B) Team member B makes the following changes:
-	- recipes/rick_and_morty_szechuan_sauce.md
-	 ` - 4 tbs of brown sugar` => ` - 4 tbs of packed brown sugar`
-
-These changes will result in a merge conflict that looks something like this:
-```
-<<<<<<< HEAD
-  - 4 tbs of packed brown sugar
-=======
-  - 6 tbs of brown sugar
->>>>>>> master
-```
-
-the resolution to this merge conflict will look like
-
-```
-<<<<<<< HEAD
-  - 4 tbs of packed brown sugar
-=======
-  - 6 tbs of brown sugar
->>>>>>> master
-```
-
-to =>
-
-`- 6 tbs of packed brown sugar`
+8) Once you are done merging, `add` and `commit` the changes to resolve the conflict
+ - notice that it will take you into a special command line editor that will have a commit name suggestion.
+ - to write/save the name of this commit and then quit the editor do the following:
+  	-- press escape
+		-- type `:wq`
+		-- press enter
+ - you should now be back at the normal command line
+9) After the changes are made `push` the changes.
+10) Get the merge conflict resolution changes's re-reviewed by the team.
+11) Team Member A merges the accepted `Pull Request`.
+- Check point: Team member A has encountered and resolved a merge conflict.
 
 
-### A merges first and C gets a merge conflict
-Repeat the scenario above but swap roles
-
-1) Team member A creates a `branch` named `instructions-fix`
-2) Team member C creates a `branch` named `chill-instructions`
-
-3-Team Member A) Team member A makes the following changes:
-	- recipes/rick_and_morty_szechuan_sauce.md
-	 ` - Strain, cover and let it cool down.` => ` - Strain, cover, and let it cool down.`
-
-3-Team Member C) Team member B makes the following changes:
-	- recipes/rick_and_morty_szechuan_sauce.md
-	 ` - Strain, cover and let it cool down.` => ` - Strain, cover and let it chill.`
-
-These changes will result in a merge conflict that looks something like this:
-```
-<<<<<<< HEAD
- - Strain, cover and let it chill.
-=======
- - Strain, cover, and let it cool down.
->>>>>>> master
-```
-
-the resolution to this merge conflict will look like
-
-```
-<<<<<<< HEAD
- - Strain, cover and let it chill.
-=======
- - Strain, cover, and let it cool down.
->>>>>>> master
-```
-
-to =>
-
-` - Strain, cover, and let it chill.`
+- Check point: make sure everyone in your team has encountered a merge conflict and also been the person to merge first(not encounter the merge conflict.)
 
 
- - Check point: make sure everyone in your team has encountered a merge conflict and also been the person to merge first(not encounter the merge conflict.)
-
-# TODO Formatting
+## Command Reference
 
 
-# [From Git to Github and back diagram](git-and-github-flow-diagram.png)
+
+## [From Git to Github and back diagram](git-and-github-flow-diagram.png)
 
 git-and-github-flow-diagram.png
