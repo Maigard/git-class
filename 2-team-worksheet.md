@@ -215,3 +215,8 @@ to =>
  - Check point: make sure everyone in your team has encountered a merge conflict and also been the person to merge first(not encounter the merge conflict.)
 
 # TODO Formatting
+
+
+# [From Git to Github and back diagram](git-and-github-flow-diagram.png)
+
+git-and-github-flow-diagram.png
