@@ -10,31 +10,44 @@
 
 
 ## Making changes and opening a pull request
-- In this block one person will make add an instruction to a recipe in the repository
+- Goal: In this block one person will make add an instruction to a recipe in the repository
 1) Team member A makes the first set of changes then opens a `Pull Request`
 	- Create a `branch` - name it after what you want to accomplish (no spaces). `add-instruction-to-cookies`  
 	- Make content changes: open any .md file in the project and add a direction step like `Lets Party` or `Give to neighbors`.
 	- `add` changes - stages changes
 	- `commit` changes - saves changes
 	- `push` changes to the remote/GitHub
-    - There might be an extra step that looks something like
+    - There might be an extra step that looks something like:
+    - `git push --set-upstream origin add-instruction-to-cookies`
+    - If so, run the command shown in your command line.
+    - You will have to run this once per branch.
 	- Open a `Pull Request` on GitHub
+  <!-- TODO link pr button screenshot -->
+  <!-- TODO link pr branch select screenshot -->
+    - A description is optional for this exercise but your `Pull Requests` should usually have some explanation.
 2) Team member B reviews and accepts the `Pull Request`
   - Notice how the changes are added to the existing content
 3) Team member A merges the `Pull Request` into `master`
-4) Repeat steps the previous steps but B makes changes and merges and A accepts
+  - There are a few options here but lets go with the simplest one for now, create a merge commit.
 - Check point: Has everyone merged 2 `Pull Requests`?
 - Check point: Is everyone up to date with master?
+  - Use `git pull` to sync with the GitHub repository
+- Recap: In this block one person created a branch, made a commit locally, pushed the commit to GitHub, opened a GitHub pull request around that commit, got the pull request reviewed by a teammate and merged their changes into the project.
+
+4) Repeat the previous steps but B makes changes and A reviews the `Pull Request`
+
 
 ## Merge conflict and resolution
 
  - When you are working with others in a single file you might encounter a `merge conflict`. This is when you have both modified a file and Git does not know what to do so you have to help it out.
- - More precisely, a `merge conflict` occurs when you start with the same file as another and they modify it behind your back and merge it into master before you. Then, when you want to merge your changes into master you might encounter a `merge conflict` because the file was modified in two different ways.
- - Although merge conflicts do not always happen when working in the same file as another team mate it is important to know how to resolve them for when they do happen.
+ - More precisely, a `merge conflict` occurs when you start with the same file as another person and they modify it behind your back and merge it into master before you. Then, when you want to merge your changes into master you might encounter a `merge conflict` because the file was modified in two different ways.
+ - Although merge conflicts do not always happen when working in the same file as another teammate it is important to know how to resolve them when they do happen.
 
 ### A merges first and B gets a merge conflict
+- Goal: In this block two different people will make different changes to the same line of a file. This would happen if both teammates saw an error with the line but had different ways to resolve the error.
+
 1) Team member A creates a `branch` named `fix-typos`
-2) Team 
+2) Team member B creates a `branch` named `typo-fix`
 3-Team Member B) Team member B makes the following changes:
 	- recipes/rick_and_morty_szechuan_sauce.md
 	 ` - Gresh ginger` => ` - Gresh ginger paste`
