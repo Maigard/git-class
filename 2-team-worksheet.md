@@ -64,40 +64,40 @@
 	- Team member B also wants to merge their `Pull Request` but they are unable to because of the `merge conflict`.
   - To resolve a conflict you will generally want to work with the person that last made changes. In this scenario that would be Team Member A.
 	- You will see something like this in your file that Git has added:
-	```
-	<<<<<<< HEAD
-	 - Gresh ginger paste
-	=======
-	 - Fresh ginger
-	>>>>>>> master
-	```
+  	```
+  	<<<<<<< HEAD
+  	 - Gresh ginger paste
+  	=======
+  	 - Fresh ginger
+  	>>>>>>> master
+  	```
 
 	- The general structure of this is:
-	```
-	<<<<<<< your_changes
-		[content that you have changed]
-	=======
-		[same line that was changed by another branch you are merging with]
-	>>>>>>> branch_you_are_merging_with
-	```
+  	```
+  	<<<<<<< your_changes
+  		[content that you have changed]
+  	=======
+  		[same line that was changed by another branch you are merging with]
+  	>>>>>>> branch_you_are_merging_with
+  	```
 
 7) Team Member B - Lets say you come to a consensus with your teammate and this is how the merge conflict will be handled:
-	The line should be `- Fresh ginger paste`. Not `- Gresh ginger paste` or ` - Fresh ginger`
+  - The line should be `- Fresh ginger paste`. Not `- Gresh ginger paste` or ` - Fresh ginger`
 
-	To resolve this conflict replace the Git added block with what the line should be:
-		```
-		<<<<<<< HEAD
-		 - Gresh ginger paste
-		=======
-		 - Fresh ginger
-		>>>>>>> master
-		```
+  - To resolve this conflict replace the Git added block with what the line should be:
+    ```
+    <<<<<<< HEAD
+     - Gresh ginger paste
+    =======
+     - Fresh ginger
+    >>>>>>> master
+    ```
 
-		to =>
+    to =>
 
-		`- Fresh ginger paste`
+    `- Fresh ginger paste`
 
-	Make sure you always remove the general merge conflict structure.
+    Make sure you always remove the general merge conflict structure.
 
 8) Once you are done merging, `add` and `commit` the changes to resolve the conflict
  - notice that it will take you into a special command line editor that will have a commit name suggestion.
@@ -142,22 +142,22 @@
     ```
 
 7) Team Member A - Lets say you come to a consensus with your teammate and this is how the merge conflict will be handled:
-	The line should be ` - Chili paste or powder`. Not ` - Chili paste` or ` - Chili powder (if you’re looking for heat)`
+  - The line should be ` - Chili paste or powder`. Not ` - Chili paste` or ` - Chili powder (if you’re looking for heat)`
 
-	To resolve this conflict replace the Git added block with what the line should be:
-  ```
-  <<<<<<< HEAD
-   - Chili paste
-  =======
-   - Chili powder (if you’re looking for heat)
-  >>>>>>> master
-  ```
+	- To resolve this conflict replace the Git added block with what the line should be:
+    ```
+    <<<<<<< HEAD
+     - Chili paste
+    =======
+     - Chili powder (if you’re looking for heat)
+    >>>>>>> master
+    ```
 
-  to =>
+    to =>
 
-  `Chili paste or powder`
+    `Chili paste or powder`
 
-	Make sure you always remove the general merge conflict structure.
+  	Make sure you always remove the general merge conflict structure.
 
 8) Once you are done merging, `add` and `commit` the changes to resolve the conflict
  - notice that it will take you into a special command line editor that will have a commit name suggestion.
@@ -178,7 +178,6 @@
 ## Command Reference
 
 
-
-## [From Git to Github and back diagram](git-and-github-flow-diagram.png)
+## From Git to Github and back diagram
 
 ![git-and-github-flow-diagram](https://github.com/Maigard/git-class/blob/rough-draft-of-worksheet-instructions/git-and-github-flow-diagram.png "git-and-github-flow-diagram")
