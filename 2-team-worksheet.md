@@ -1,3 +1,5 @@
+## [Instructions](worksheet-instructions.md)
+
 ## Setup
 
 1) Team member A forks the demo repository from https://github.com/harokevin/recipes
@@ -10,7 +12,8 @@
 
 
 ## Making changes and opening a pull request
-- Goal: In this block one person will make add an instruction to a recipe in the repository
+- Goal: In this block one person will add an instruction to a recipe in the repository
+
 1) Team member A makes the first set of changes then opens a `Pull Request`
 	- Create a `branch` - name it after what you want to accomplish (no spaces). `add-instruction-to-cookies`  
 	- Make content changes: open any .md file in the project and add a direction step like `Lets Party` or `Give to neighbors`.
@@ -29,13 +32,15 @@
   - Notice how the changes are added to the existing content
 3) Team member A merges the `Pull Request` into `master`
   - There are a few options here but lets go with the simplest one for now, create a merge commit.
-- Check point: Has everyone merged 2 `Pull Requests`?
 - Check point: Is everyone up to date with master?
   - Use `git pull` to sync with the GitHub repository
 - Recap: In this block one person created a branch, made a commit locally, pushed the commit to GitHub, opened a GitHub pull request around that commit, got the pull request reviewed by a teammate and merged their changes into the project.
 
 4) Repeat the previous steps but B makes changes and A reviews the `Pull Request`
 
+5) Repeat the entire drill again so that by the end everyone has merged into master twice. This entire piece of work should consist of A making a change and merging, B making a change and merging, then A making a change and merging again, and finally B making a change and merging.
+
+- Check point: Has everyone merged 2 `Pull Requests`?
 
 ## Merge conflict and resolution
 
@@ -107,7 +112,7 @@
 		-- press enter
  - you should now be back at the normal command line
 9) After the changes are made `push` the changes.
-10) Get the merge conflict resolution changes's re-reviewed by the team.
+10) Get the merge conflict resolution changes re-reviewed by the team.
 11) Team Member B merges the accepted `Pull Request`.
 - Check point: Team member B has encountered and resolved a merge conflict.
 
@@ -167,7 +172,7 @@
 		-- press enter
  - you should now be back at the normal command line
 9) After the changes are made `push` the changes.
-10) Get the merge conflict resolution changes's re-reviewed by the team.
+10) Get the merge conflict resolution changes re-reviewed by the team.
 11) Team Member A merges the accepted `Pull Request`.
 - Check point: Team member A has encountered and resolved a merge conflict.
 
