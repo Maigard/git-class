@@ -222,7 +222,7 @@ Goal: In this block two different people will make different changes to the same
 
 
 # Well done!
-Now that you and your team have completed the worksheet you should be a little more comfotable working on a project with Git as your version control system. The next steps are all up to you we recommend that you use Git with your next text based project(software, paper, blog) to really solidify your knowledge and get into the habit of using Git.
+Now that you and your team have completed the worksheet you should be a little more comfortable working on a project with Git as your version control system. The next steps are all up to you we recommend that you use Git with your next text based project(software, paper, blog) to really solidify your knowledge and get into the habit of using Git.
 
 
 # Reference

@@ -384,7 +384,7 @@ Team member C has encountered and resolved a merge conflict.
 
 
 # Well done!
-Now that you and your team have completed the worksheet you should be a little more comfotable working on a project with Git as your version control system. The next steps are all up to you we recommend that you use Git with your next text based project(software, paper, blog) to really solidify your knowledge and get into the habit of using Git.
+Now that you and your team have completed the worksheet you should be a little more comfortable working on a project with Git as your version control system. The next steps are all up to you we recommend that you use Git with your next text based project(software, paper, blog) to really solidify your knowledge and get into the habit of using Git.
 
 
 # Reference
