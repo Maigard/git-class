@@ -3,16 +3,19 @@
 ## Setup
 
 1) Team member A forks the demo repository from https://github.com/harokevin/recipes
-<!-- TODO link fork screenshot -->
+
+![where-to-fork](https://github.com/Maigard/git-class/blob/rough-draft-of-worksheet-instructions/img/where-to-fork.png "where-to-fork")
 
 2) Team member A gives team member B access to team member A's fork on GitHub
-<!-- TODO link collaborators screenshot -->
+
+![collaborators](https://github.com/Maigard/git-class/blob/rough-draft-of-worksheet-instructions/img/collaborators.png "collaborators")
 
 3) Team member A and B clone team member A's online fork onto their computers
 
-Check Point: Do all teammates have a version of the fork on their computers?
-<!-- TODO link copy url and clone screenshot -->
+![copy-and-clone](https://github.com/Maigard/git-class/blob/rough-draft-of-worksheet-instructions/img/copy-and-clone.png "copy-and-clone")
 
+### Check Point
+Do all teammates have a version of the fork on their computers?
 
 ## Making changes and opening a pull request
 Goal: In this block one person will add an instruction to a recipe in the repository
@@ -34,8 +37,8 @@ Goal: In this block one person will add an instruction to a recipe in the reposi
 	  - You will have to run this once per branch.
 - Open a `Pull Request` on GitHub
     - A description is optional for this exercise but your `Pull Requests` should usually have some explanation.
-<!-- TODO link pr button screenshot -->
-<!-- TODO link pr branch select screenshot -->
+		- ![pull-request](https://github.com/Maigard/git-class/blob/rough-draft-of-worksheet-instructions/img/pull-request.png "pull-request")
+		- ![pull-request-branch-name](https://github.com/Maigard/git-class/blob/rough-draft-of-worksheet-instructions/img/pull-request-branch-name.png "pull-request-branch-name")
 
 2) The other team members review and accept the `Pull Request`
   - Notice how the changes are added to the existing content
