@@ -282,4 +282,4 @@ Origin: where I put backups or share my code
 
 ## From Git to Github and back diagram
 
-![git-and-github-flow-diagram](https://github.com/Maigard/git-class/blob/rough-draft-of-worksheet-instructions/git-and-github-flow-diagram.png "git-and-github-flow-diagram")
+![git-and-github-flow-diagram](https://github.com/Maigard/git-class/blob/master/img/git-and-github-flow-diagram.png "git-and-github-flow-diagram")
